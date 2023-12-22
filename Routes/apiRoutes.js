@@ -6,6 +6,9 @@ const adminController = require('../Controllers/adminController');
 router.post('/addFood', adminController.uploadProduct);
 router.get('/getMeal/:selectedMeal',adminController.getFoodByType)
 
+//
+router.get('/dummyApi',adminController.dummyApi);
+
 
 //user APIs
 router.post('/signUp', userController.signUp);

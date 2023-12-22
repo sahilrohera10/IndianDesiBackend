@@ -3,6 +3,7 @@ const adminModel = require("../Models/adminModel");
 module.exports = {
   uploadProduct,
   getFoodByType,
+  dummyApi
 };
 
 async function uploadProduct(req, res, next) {
@@ -97,4 +98,10 @@ async function getFoodByType(req, res) {
   } catch (error) {
     console.log(error);
   }
+}
+
+async function dummyApi(req,res){
+     
+     return res.status(200).json("ok");
+   
 }
